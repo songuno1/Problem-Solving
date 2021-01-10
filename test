@@ -1,0 +1,14 @@
+#include <stdio.h>
+ 
+int A, B, Ac, Bc;
+ 
+int main() {
+	scanf("%d%d", &A, &B);
+ 
+	while (A) Ac += A % 10, A /= 10;
+	while (B) Bc += B % 10, B /= 10;
+ 
+	printf("%d", (Ac > Bc) ? Ac : Bc);
+ 
+	return 0;
+}
